@@ -1,0 +1,184 @@
+.main-heading{
+    background:linear-gradient(135deg, #000000,gold,#000000);
+    color:#ffffff;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 900;
+    letter-spacing: 3px;
+    padding: 25px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+.video{
+    width:100%;
+    height:80vh;
+    object-fit: cover;
+}
+.scroll-bar {
+  background-color: black;   /* background visible */
+  height: 45px;
+  width: 100%;
+  overflow: hidden;
+}
+.scroll-text {
+  color: white;              /* IMPORTANT */
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 45px;
+  white-space: nowrap;
+  display: inline-block;
+  padding-left: 100%;
+  animation: moveText 12s linear infinite;
+}
+@keyframes moveText {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+.main-heading1 {
+    color:#000000;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 900;
+    letter-spacing: 3px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    
+}
+
+.products{
+  background: #ffffff;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+  transition:transform 0.3s;
+}
+
+.brand{
+  font-size: 18px;
+  font-weight: bold;
+  margin: 8px 0;
+}
+.rating {
+        margin:6px 0;
+        font-size: 14px;
+}
+.rating span{
+  color:#777;
+}
+.price{
+  margin:10px 0;
+}
+.offer{
+  font-size: 22px;
+  font-weight: bold;
+  color: #000;
+}
+.mrp{
+  text-decoration: line-through;
+  color:#888;
+  margin-left:6px;
+}
+.discount{
+  color:green;
+  font-weight: bold;
+  margin-left: 6px;
+}
+.shop-btn{
+  width:20%;
+  padding:10px;
+  background:#333;
+  border:none;
+  font-weight:bold;
+  cursor:pointer;
+  position: relative;
+  z-index: 3;
+}
+.shop-btn:hover{
+  background:whitesmoke;
+}
+
+.hero{
+  min-height:90vh;
+  width: 100%;
+  background-image: url('https://t4.ftcdn.net/jpg/03/40/04/33/360_F_340043322_9ynAnyqBYKycgxapGGv1WrQW1ZUwMyDM.jpg');
+  background-size: cover;
+  background-position: center;
+  position:relative
+}
+.hero::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background: rgba(0,0,0,0.5);
+}
+.hero.container{
+  position: relative;
+  z-index: 2;
+}
+.rings-hero{
+  background-image: url('https://www.justmensrings.com/cdn/shop/articles/393f9e31-df5f-488d-a126-d30758c6c811_1792x.webp?v=1722974363');
+}
+.bracelets-hero{
+  background-image: url('https://www.jewelmarvels.com/cdn/shop/products/Screenshot2022-05-11at17.10.02.png?v=1758886657&width=1000');
+}
+.chains-hero{
+  background-image: url('https://rukminim2.flixcart.com/image/480/640/xif0q/necklace-chain/x/s/g/1-fghy-chain-set-xermi-original-imah35frnkcghs3n.jpeg?q=90');
+}
+.reel1-video{
+  width:100%;
+  height:450px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.reel3-video{
+  width:100%;
+  height:450px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.reel4-video{
+  width:100%;
+  height:450px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin: 0 10px;
+  border-radius: 50%;
+  background-color: #222;
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  pointer-events: none; /* disable click for now */
+}
+
+.social-icon:hover {
+  background-color: #f4b400;
+  transform: translateY(-3px);
+}
+.footer-inline{
+  border:none;
+  height:1px;
+  background: #333;
+  margin-top: 30px;
+}
+
+.footer {
+  background: linear-gradient(135deg, #000000, gold, #000000);
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 40px 0 25px; /* reduced height */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}

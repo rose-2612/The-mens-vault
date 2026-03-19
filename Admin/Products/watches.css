@@ -1,0 +1,98 @@
+ body {
+  font-family: Arial, sans-serif;
+}
+
+.page-title {
+  text-align: center;
+  margin: 20px 0;
+  background:linear-gradient(135deg, #000000,gold,#000000);
+}
+.hero{
+  min-height:70vh;
+  width: 100%;
+  background-image: url('https://hodinkee.imgix.net/uploads/images/1590079828602-0s0zkrmbwece-b508fc566b07f7282db3bee225f108e0/watches_make_you_better.jpg?ixlib=rails-1.1.0&fm=jpg&q=55&auto=format&usm=12');
+  background-size: cover;
+  background-position: center;
+  position:relative
+}
+.hero::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background: rgba(0,0,0,0.5);
+}
+.hero.container{
+  position: relative;
+  z-index: 1;
+}
+
+/* GRID LAYOUT */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 25px;
+  padding: 20px;
+}
+
+/* CARD */
+.product-card {
+  height: 420px;             /* ✅ FIXED SIZE */
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 12px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* IMAGE */
+.img-box {
+  height: 200px;
+  overflow: hidden;
+}
+
+.img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* TEXT */
+.product-card h3 {
+  font-size: 15px;
+}
+
+.rating {
+  color: #f4b400;
+  font-size: 14px;
+}
+
+.price {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.mrp {
+  text-decoration: line-through;
+  color: #888;
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+.discount {
+  color: green;
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+/* BUTTON */
+.product-card button {
+  background: black;
+  color: white;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+ 
