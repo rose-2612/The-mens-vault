@@ -10,13 +10,9 @@
     text-transform: uppercase;
     box-shadow: 0 4px 10px rgba(0,0,0,0.4);
 }
-.video{
-    width:100%;
-    height:80vh;
-    object-fit: cover;
-}
+
 .scroll-bar {
-  background-color: black;   /* background visible */
+  background-color:black; /* background visible */
   height: 45px;
   width: 100%;
   overflow: hidden;
